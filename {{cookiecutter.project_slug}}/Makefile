@@ -94,3 +94,12 @@ dist: clean ## builds source and wheel package
 
 install: clean ## install the package to the active Python's site-packages
 	python setup.py install
+
+patch: ## upgrade patch version
+	bumpversion patch
+
+major: ## upgrade major version
+	bumpversion major
+
+minor: ## upgrade minor version
+	bumpversion minor
