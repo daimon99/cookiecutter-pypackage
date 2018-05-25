@@ -21,6 +21,7 @@
 import os
 import sys
 sys.path.insert(0, os.path.abspath('..'))
+from recommonmark.parser import CommonMarkParser
 
 import {{ cookiecutter.project_slug }}
 
@@ -41,7 +42,10 @@ templates_path = ['_templates']
 # You can specify multiple suffix as a list of string:
 #
 # source_suffix = ['.rst', '.md']
-source_suffix = '.rst'
+source_suffix = ['.rst', '.md']
+source_parsers = {
+    '.md': CommonMarkParser
+}
 
 # The master toctree document.
 master_doc = 'index'
@@ -65,7 +69,7 @@ release = {{ cookiecutter.project_slug }}.__version__
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'zh_CN'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -158,6 +162,10 @@ texinfo_documents = [
      'One line description of project.',
      'Miscellaneous'),
 ]
+
+# 修改 sidebar 的内容
+# html_sidebars = {'**': ['globaltoc.html', 'sourcelink.html', 'relations.html', 'searchbox.html']}
+
 
 
 
