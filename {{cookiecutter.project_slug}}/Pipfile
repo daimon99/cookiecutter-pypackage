@@ -12,7 +12,6 @@ wheel = "*"
 sphinx = "*"
 recommonmark = "*"
 click = "*"
-pytest = "*"
 
 [dev-packages]
 
