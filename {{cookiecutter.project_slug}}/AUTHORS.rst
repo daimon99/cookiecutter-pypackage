@@ -1,13 +1,13 @@
 =======
-Credits
+感谢
 =======
 
-Development Lead
+主程
 ----------------
 
 * {{ cookiecutter.full_name }} <{{ cookiecutter.email }}>
 
-Contributors
+贡献者
 ------------
 
-None yet. Why not be the first?
+还没有。你试试成为第一个?

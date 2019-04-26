@@ -1,51 +1,24 @@
 .. highlight:: shell
 
 ============
-Installation
+安装
 ============
 
 
-Stable release
+
+稳定版本
 --------------
 
-To install {{ cookiecutter.project_name }}, run this command in your terminal:
+打开控制台，运行:
 
 .. code-block:: console
 
-    $ pip install {{ cookiecutter.project_slug }}
+    $ pip install --extra-index-url http://<username>:<password>@pypi.taijihuabao.com/ --trusted-host pypi.taijihuabao.com {{ cookiecutter.project_slug }}
 
-This is the preferred method to install {{ cookiecutter.project_name }}, as it will always install the most recent stable release.
+如果你直接写在 `requirements.txt` 中，这样写
 
-If you don't have `pip`_ installed, this `Python installation guide`_ can guide
-you through the process.
+.. code-block:: ini
 
-.. _pip: https://pip.pypa.io
-.. _Python installation guide: http://docs.python-guide.org/en/latest/starting/installation/
-
-
-From sources
-------------
-
-The sources for {{ cookiecutter.project_name }} can be downloaded from the `Github repo`_.
-
-You can either clone the public repository:
-
-.. code-block:: console
-
-    $ git clone git://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}
-
-Or download the `tarball`_:
-
-.. code-block:: console
-
-    $ curl  -OL https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/tarball/master
-
-Once you have a copy of the source, you can install it with:
-
-.. code-block:: console
-
-    $ python setup.py install
-
-
-.. _Github repo: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}
-.. _tarball: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/tarball/master
+    --extra-index-url http://<username>:<password>@pypi.taijihuabao.com/
+    --trusted-host pypi.taijihuabao.com
+    {{ cookiecutter.project_slug }}

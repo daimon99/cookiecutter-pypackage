@@ -1,7 +1,7 @@
 =====
-Usage
+使用
 =====
 
-To use {{ cookiecutter.project_name }} in a project::
+在你的项目中使用 `{{ cookiecutter.project_name }}`::
 
-    import {{ cookiecutter.project_slug }}
+    import {{ cookiecutter.project_name }}

@@ -1,0 +1,14 @@
+bumpversion
+click==6.7
+coverage
+flake8
+pip
+pytest
+pytest-runner
+recommonmark
+requests
+Sphinx
+tox
+twine
+watchdog
+wheel
