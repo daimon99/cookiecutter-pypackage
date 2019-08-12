@@ -4,7 +4,7 @@
   "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
   "full_name": "Jian Dai",
   "email": "daijian1@qq.com",
-  "github_username": "daimon99",
+  "github_username": "tjhb",
   "pypi_username": "{{ cookiecutter.github_username }}",
   "version": "0.1.0",
   "use_pypi_deployment_with_travis": "n",
